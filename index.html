@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的网站 - brzl_bm-st</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎉 欢迎来到我的网站</h1>
+        <p>这是 brzl_bm-st 项目的 GitHub Pages 网站</p>
+        <p>访问地址：https://vingnirwu.github.io/brzl_bm-st/</p>
+    </header>
+    
+    <main>
+        <section>
+            <h2>📖 关于这个项目</h2>
+            <p>这是一个演示如何使用 GitHub Pages 创建静态网站的示例项目。</p>
+            <p>GitHub Pages 可以自动将您的仓库内容发布为网站。</p>
+        </section>
+        
+        <section>
+            <h2>✨ 功能特性</h2>
+            <ul>
+                <li>✅ 免费静态网站托管</li>
+                <li>✅ 自动部署和更新</li>
+                <li>✅ 支持自定义域名</li>
+                <li>✅ 支持 HTTPS 安全连接</li>
+                <li>✅ 可与 Jekyll 等静态网站生成器配合使用</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>🚀 下一步计划</h2>
+            <ol>
+                <li>添加更多页面内容</li>
+                <li>设置自定义域名</li>
+                <li>优化网站样式和功能</li>
+                <li>添加项目文档和示例</li>
+            </ol>
+        </section>
+    </main>
+    
+    <footer>
+        <p>📧 联系方式：您的邮箱地址</p>
+        <p>© 2026 brzl_bm-st 项目. 所有权利保留.</p>
+        <p>🕒 最后更新时间：<span id="current-date"></span></p>
+    </footer>
+
+    <script>
+        // 显示当前日期
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('zh-CN');
+        
+        // 简单的交互效果
+        document.querySelectorAll('section').forEach(section => {
+            section.addEventListener('mouseover', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            
+            section.addEventListener('mouseout', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
